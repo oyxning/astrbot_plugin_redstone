@@ -18,7 +18,7 @@ class ChiShiXiaoZhuShou(Star):
         # —— 请设置你的硅基流动 API 信息 —— #
         self.api_base = os.getenv("SILICONFLOW_API_URL", "https://api.siliconflow.cn/v1")
         self.api_key = os.getenv("SILICONFLOW_API_KEY", "你的硅基流动API_KEY")
-        self.model = os.getenv("SILICONFLOW_MODEL", "internlm/internlm2_5-7b-chat")
+        self.model = os.getenv("SILICONFLOW_MODEL", "deepseek-ai/DeepSeek-V3")
         # ======================================== #
 
     @filter.command("来依托")
@@ -26,8 +26,8 @@ class ChiShiXiaoZhuShou(Star):
         logger.info(f"[赤石小助手] 收到 /来依托，用户：{event.get_sender_id()}")
 
         prompt = (
-            "请用中文生成一段“地狱笑话”，但是不限制地狱笑话的范围"
-            "要荒诞、无厘头、有结构感，让人想笑，必须要让用户看得懂。"
+            "请用中文生成一段“地狱笑话”"
+            "要荒诞、无厘头、让人想笑，但是必须要让用户看得懂。"
         )
 
         url = f"{self.api_base}/chat/completions"
