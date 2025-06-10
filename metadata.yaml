@@ -1,5 +1,19 @@
-name: helloworld # 这是你的插件的唯一识别名。
-desc: 这是 AstrBot 的默认插件，支持关键词回复。 # 插件简短描述
-version: v1.3 # 插件版本号。格式：v1.1.1 或者 v1.1
-author: Soulter # 作者
-repo: https://github.com/Soulter/helloworld # 插件的仓库地址
+id: astrbot_plugin_redstone
+name: 赤石小助手
+version: 1.3.0
+author: LumineStory
+description: 自动生成理解不了但中文的地狱笑话（使用硅基流动 API）
+homepage: https://github.com/oyxning/astrbot_plugin_redstone
+entrypoint: main.py
+requirements:
+  - aiohttp
+commands:
+  - name: 来依托
+    description: 调用硅基流动 API 生成荒诞地狱笑话
+environment:
+  - key: SILICONFLOW_API_KEY
+    description: 你的硅基流动 API 密钥
+  - key: SILICONFLOW_MODEL
+    description: 模型名称，默认 internlm/internlm2_5-7b-chat
+  - key: SILICONFLOW_API_URL
+    description: API 接口地址，默认 https://api.siliconflow.cn/v1
