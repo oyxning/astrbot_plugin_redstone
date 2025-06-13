@@ -4,16 +4,3 @@ version: 1.0.0
 author: LumineStory
 description: 自动生成理解不了但中文的地狱笑话（使用硅基流动 API）
 homepage: https://github.com/oyxning/astrbot_plugin_redstone
-entrypoint: main.py
-requirements:
-  - aiohttp
-commands:
-  - name: 来依托
-    description: 调用硅基流动 API 生成荒诞地狱笑话
-environment:
-  - key: SILICONFLOW_API_KEY
-    description: 你的硅基流动 API 密钥
-  - key: SILICONFLOW_MODEL
-    description: 模型名称，默认 internlm/internlm2_5-7b-chat
-  - key: SILICONFLOW_API_URL
-    description: API 接口地址，默认 https://api.siliconflow.cn/v1
