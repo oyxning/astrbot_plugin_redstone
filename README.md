@@ -1,3 +1,5 @@
+# 这个插件由于过于没用所以归档了
+
 # 赤石小助手（astrbot_plugin_redstone）
 
 这是一个适用于 [AstrBot](https://astrbot.app) 的插件，用于生成令人迷惑的“地狱笑话”。本插件调用 **硅基流动 API**，支持多种国产大语言模型。
